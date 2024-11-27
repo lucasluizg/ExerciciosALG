@@ -5,7 +5,7 @@ public class Main {
     int palavras = 0;
     boolean novaPalavra = true;
 
-        for (int i = 0; i<texto.length(); i++){
+        for (int i = 0; i < texto.length(); i++){
             char caractere = texto.charAt(i);
             if (novaPalavra && caractere >= 'A' && caractere <= 'Z'){
                 palavras++;
