@@ -5,8 +5,8 @@ public class Main {
 
     Scanner scanner = new Scanner(System.in);
 
+    System.out.print("Genero: ");
     String genero = scanner.nextLine();
-    System.out.println("Genero: " + genero);
 
     switch (genero) {
         case "Ação":

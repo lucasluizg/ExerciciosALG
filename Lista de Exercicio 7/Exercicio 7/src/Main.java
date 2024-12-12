@@ -5,11 +5,11 @@ public class Main {
 
     Scanner scanner = new Scanner(System.in);
 
+    System.out.print("Nota 1: ");
     int nota1 = scanner.nextInt();
-    System.out.println("Nota 1: " + nota1);
 
+    System.out.print("Nota 2: ");
     int nota2 = scanner.nextInt();
-    System.out.println("Nota 2: " + nota2);
 
     int media = (nota1 + nota2) / 2;
 

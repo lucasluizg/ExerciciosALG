@@ -5,8 +5,8 @@ public class Main {
 
     Scanner scanner = new Scanner(System.in);
 
+    System.out.print("Dia da semana: ");
     String dia = scanner.nextLine();
-    System.out.println("Dia da semana: " + dia);
 
     switch (dia){
         case "Domingo":

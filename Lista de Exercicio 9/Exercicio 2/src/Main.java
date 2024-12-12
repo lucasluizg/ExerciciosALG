@@ -5,7 +5,7 @@ public class Main {
 
         Scanner reader = new Scanner(System.in);
 
-        System.out.println("Escreva um número: ");
+        System.out.print("Escreva um número: ");
         int num = reader.nextInt();
 
         int potencia = 1;

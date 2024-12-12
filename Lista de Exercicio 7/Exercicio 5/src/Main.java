@@ -5,8 +5,8 @@ public class Main {
 
     Scanner scanner = new Scanner(System.in);
 
+    System.out.print("Idade: ");
     int idade = scanner.nextInt();
-    System.out.println("Idade: " + idade);
 
     switch (idade) {
         case 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17:

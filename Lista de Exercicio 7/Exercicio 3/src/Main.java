@@ -5,14 +5,14 @@ public class Main {
 
     Scanner scanner = new Scanner(System.in);
 
+    System.out.print("Operação: ");
     char operacao = scanner.next().charAt(0);
-    System.out.println("Operação: " + operacao);
 
+    System.out.print("Número 1: ");
     double n1 = scanner.nextDouble();
-    System.out.println("Número 1: " + n1);
 
+    System.out.print("Número 2: ");
     double n2 = scanner.nextDouble();
-    System.out.println("Número 2: " + n2);
 
     double resultado = 0;
 

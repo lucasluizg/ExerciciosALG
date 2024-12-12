@@ -7,12 +7,14 @@ public class Main {
 
         System.out.print("Digite um valor: ");
         int numero = reader.nextInt();
+        int soma = 0;
 
         for (int i = 1; i < numero; i++){
             if (numero % i == 0 && i % 2 == 0){
-                System.out.println(i);
+                soma += i;
             }
         }
+        System.out.println("Soma dos fatores pares: " + soma);
         reader.close();
     }
 }

@@ -5,8 +5,8 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
+        System.out.print("Número: ");
         int numero = scanner.nextInt();
-        System.out.println(numero);
 
         int divisor = 1;
 
