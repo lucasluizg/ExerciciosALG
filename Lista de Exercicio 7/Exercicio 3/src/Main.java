@@ -12,7 +12,7 @@ public class Main {
     System.out.println("Número 1: " + n1);
 
     double n2 = scanner.nextDouble();
-    System.out.println("Número 2: " + n2);-
+    System.out.println("Número 2: " + n2);
 
     double resultado = 0;
 
