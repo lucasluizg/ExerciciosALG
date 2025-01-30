@@ -13,10 +13,10 @@ public class Main {
             if (numero == array[i]) {
                 System.out.print("Sim");
                 break;
-                if (array[array.length - 1] != numero) {
-                    System.out.print("Não");
-                    break;
-                }
+            }
+            if (array[array.length - 1] != numero) {
+                System.out.print("Não");
+                break;
             }
         }
     }
