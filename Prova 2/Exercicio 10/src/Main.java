@@ -1,9 +1,33 @@
 public class Main {
     public static void main(String[] args) {
 
-        String input = "  Olá,    mundo!   ";
+        String input = " Olá,  mundo! ";
 
         String texto = input.toLowerCase();
+
+        if (texto.contains("  ")) {
+            String textoSemEspaco = texto.replace("  ", " ");
+            System.out.print(textoSemEspaco);
+        }
+
+        if (texto.charAt(0) == ' ') {
+            texto = texto.substring(1);
+            String textoSemEspaco = texto.replace(" ", "");
+        }
+
+        if (texto.charAt(texto.length() - 1) == ' ') {
+            texto = texto.substring(0, texto.length() - 1);
+        }
+
+        String textofinal = "";
+
+        for (int i = 0; i < texto.length(); i++) {
+            char letra = texto.charAt(i);
+            if ((letra >= 'a' && letra <= 'z') || (letra >= '0' && letra <= '9')
+                    || letra == ' ') {
+                textofinal += letra;
+            }
+        }
 
         for (int i = 0; i < texto.length(); i++) {
             char letra = texto.charAt(i);
@@ -25,27 +49,5 @@ public class Main {
                     break;
             }
         }
-
-        while (texto.contains("  ")) {
-            texto.replace("  ", " ");
-        }
-
-        if (texto.charAt(0) == ' ') {
-            texto = texto.substring(1);
-        }
-
-        if (texto.charAt(texto.length() - 1) == ' ') {
-            texto = texto.substring(0, texto.length() - 1);
-        }
-
-        String textofinal = "";
-
-        for (int i = 0; i < texto.length(); i++) {
-            char letra = texto.charAt(i);
-            if ((letra >= 'a' && letra <= 'z') || (letra >= '0' && letra <= '9') || letra == ' ') {
-                textofinal += letra;
-            }
-        }
-        System.out.print(textofinal);
     }
 }

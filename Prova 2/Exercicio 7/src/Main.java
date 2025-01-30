@@ -5,6 +5,7 @@ public class Main {
 
         Scanner reader = new Scanner(System.in);
 
+        System.out.print("Digite a sua idade: ");
         int dataNasc = reader.nextInt();
         int idade = 2024 - dataNasc;
 
