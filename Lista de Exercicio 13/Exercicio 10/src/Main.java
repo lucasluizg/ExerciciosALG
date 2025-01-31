@@ -5,22 +5,23 @@ public class Main {
 
         Scanner reader = new Scanner(System.in);
 
-        int array[] = {1, 2, 3, 4, 5, 6, 7};
-        System.out.print("Digite um número: ");
+        int array[] = {10, 23, 47, 53, 46, 71, 83, 98};
+        System.out.print("Escreva um número: ");
         int numero = reader.nextInt();
-        boolean achou = false;
+        int indice = -1;
 
         for (int i = 0; i < array.length; i++) {
             if (array[i] == numero) {
-                achou = true;
+                indice = i;
                 break;
             }
         }
 
-        if (achou) {
-            System.out.print("Sim");
+        if (indice > -1) {
+            System.out.print(indice);
         } else {
-            System.out.print("Não");
+            System.out.print("Não está na matriz");
         }
+
     }
 }

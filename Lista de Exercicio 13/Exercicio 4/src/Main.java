@@ -19,6 +19,7 @@ public class Main {
                 }
             }
         }
+        System.out.println("O maior é: " + maior);
         System.out.print("O segundo maior é: " + segundoMaior);
     }
 }
