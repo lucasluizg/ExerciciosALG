@@ -14,4 +14,12 @@ public class Main {
                 transposta[i][j] = inteiros[j][i];
             }
         }
+
+        for (int i = 0; i < transposta.length; i++) {
+            for (int j = 0; j < transposta[i].length; j++) {
+                System.out.print(transposta[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
 }
