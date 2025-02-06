@@ -14,8 +14,10 @@ public class Main {
         int matrizMultiplicacao[] = new int [matriz1.length + matriz2.length];
 
         for (int i = 0; i < matriz1.length; i++) {
+            int soma = 0;
             for (int j = 0; j < matriz2[i].length; j++) {
-                matrizMultiplicacao[i] = matriz1[i][j] * matriz2[j][i];
+                soma += matriz1[i][j] * matriz2[j][i];
+                matrizMultiplicacao[i] = soma;
             }
         }
 
