@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
 
-        int num1 = 20;
-        int num2 = 10;
+        int num1 = 12;
+        int num2 = 3;
 
         System.out.print(mdc(num1, num2));
 
@@ -10,14 +10,15 @@ public class Main {
 
     static int mdc (int num1, int num2) {
 
-        int divisor = 1;
-
-        for (int i = 1; i <= num1; i++) {
-            if ((num1 % i == 0) && (num2 % i == 0)) {
-                divisor = i;
+        while (num1 != num2){
+            if (num1 > num2){
+                num1 = num1 - num2;
+            } else if (num2 > num1) {
+                num2 = num2 - num1;
             }
         }
-        return divisor;
+
+        return num1;
     }
 
 }
