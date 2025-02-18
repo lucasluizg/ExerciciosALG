@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        String palavra = "xyz";
+        String palavra = "abc";
         String palavraCifrada = cifraCesar(palavra, -3);
         System.out.print(palavraCifrada);
 
@@ -11,7 +11,7 @@ public class Main {
         String cifrado = "";
 
         if (deslocamento < 0) {
-            deslocamento = 23;
+            deslocamento = 29;
         }
 
         for (int i = 0; i < texto.length(); i++) {
