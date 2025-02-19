@@ -3,15 +3,24 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args){
 
-        Scanner reader = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         String array[] = {"Lucas", "Alberto", "Bernardo", "Maria", "Cecilia", "Joana"};
-        String nome = "Lucas";
+        System.out.print("Digite um nome: ");
+        String nome = sc.next();
+        boolean encontrou = false;
 
         for (int i = 0; i < array.length; i++) {
-            if (array[i] == nome) {
-                System.out.print("Está na matriz");
+            if (nome.equalsIgnoreCase(array[i])) {
+                encontrou = true;
+                break;
             }
+        }
+
+        if (encontrou) {
+            System.out.println("O nome da matriz é: " + nome);
+        } else {
+            System.out.println("O nome não está na matriz.");
         }
     }
 }
