@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        int array[] = {15, 10, 23, 37, 46, 87, 113, 225, 389, 570};
+        int array[] = {10, 15, 23, 37, 46, 87, 113, 225, 389, 570};
         testeBusca(array);
 
     }
