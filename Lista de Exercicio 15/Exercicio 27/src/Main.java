@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
 
-        String palavra = "abc";
-        String palavraCifrada = cifraCesar(palavra, -3);
+        String palavra = "stu";
+        String palavraCifrada = cifraCesar(palavra, 29);
         System.out.print(palavraCifrada);
 
     }
@@ -10,13 +10,10 @@ public class Main {
     static String cifraCesar(String texto, int deslocamento) {
         String cifrado = "";
 
-        if (deslocamento < 0) {
-            deslocamento = 29;
-        }
-
         for (int i = 0; i < texto.length(); i++) {
             char letra = texto.charAt(i);
-            System.out.print((char)((letra - 'a' + deslocamento) % 26 + 'a'));
+            char novaLetra = ((char)((letra - 'a' + deslocamento) % 26 + 'a'));
+            cifrado = cifrado + novaLetra;
         }
         return cifrado;
     }
